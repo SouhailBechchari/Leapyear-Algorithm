@@ -1,0 +1,31 @@
+﻿Fonction est_bissextile(annee)
+
+    Si (annee mod 4 = 0 et annee mod 100 ≠ 0) ou (annee mod 400 = 0) Alors
+
+        Retourne Vrai
+   
+ Sinon
+        Retourne Faux
+ 
+   Fin Si
+
+
+Fonction annees_bissextiles(siecle)
+
+    Debut
+        
+       annee_debut ← (siecle * 100) - 100
+ 
+        annee_fin ← siecle * 100 - 1
+ 
+       Pour annee <-- annee_debut à annee_fin Faire
+
+            Si est_bissextile(annee) Alors
+ 
+               ecrire(annee)
+  
+          Fin Si
+  
+      Fin Pour
+ 
+   
